@@ -1,0 +1,47 @@
+[build]
+dist = "dist"
+filehash = true
+public_url = "/"
+release = true
+target = "index.html"
+
+[watch]
+watch = []
+ignore = []
+
+[serve]
+address = "0.0.0.0"
+no_autoreload = false
+open = false
+port = 8000
+
+[clean]
+cargo = false
+dist = "dist"
+
+
+[tools]
+sass = "1.54.9"
+wasm_bindgen = "0.2.83"
+wasm_opt = "version_110"
+
+[[hooks]]
+command = "echo"
+command_arguments = []
+stage = "pre_build"
+
+
+[[hooks]]
+# This hook example shows running a command inside a shell. As a result, features such as variable
+# interpolation are available. This shows the TRUNK_STAGING_DIR environment variable, one of a set
+# of default variables that Trunk inserts into your hook's environment. Additionally, this hook
+# uses the build stage, meaning it executes in parallel with all of the existing asset pipelines.
+command = "sh"
+command_arguments = ["-c", "echo Staging directory: $TRUNK_STAGING_DIR"]
+stage = "build"
+
+
+[[hooks]]
+command = "ls"
+stage = "post_build"
+

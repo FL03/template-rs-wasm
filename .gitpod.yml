@@ -1,0 +1,10 @@
+tasks:
+  - name: Setup
+    init: |
+      sudo apt update -y && sudo apt upgrade -y && sudo autoremove && sudo apt install -y protobuf-compiler
+      curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | zsh
+      rustup default nightly
+      rustup component add clippy rustfmt --toolchain nightly
+      rustup target add wasm32-unknown-unknown wasm32-wasi --toolchain nightly 
+      cargo install trunk wasm-bindgen-cli
+    command: trunk serve
