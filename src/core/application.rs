@@ -4,8 +4,6 @@
     Description: ... summary ...
 */
 use yew::{html, Component, Context, Html};
-use wasm_bindgen::prelude::*;
-
 
 pub enum Msg {
     AddOne,
@@ -19,7 +17,7 @@ impl Component for App {
     type Message = Msg;
     type Properties = ();
 
-    fn create(ctx: &Context<Self>) -> Self {
+    fn create(_ctx: &Context<Self>) -> Self {
         Self { value: 0 }
     }
 
@@ -38,15 +36,15 @@ impl Component for App {
         html! {
             <div class={format!("{bg} {color} flex flex-col m-0 py-3 z-0 min-h-screen min-w-full max-w-screen")}>
                 <main class="container mx-auto h-full">
-                    <button 
-                        class="bg-gradient-to-br from-cyan-300 via-cyan-400 to-cyan-500 flex flex-auto items-center justify-center mx-auto px-3 py-1 rounded text-white" 
+                    <button
+                        class="bg-gradient-to-br from-cyan-300 via-cyan-400 to-cyan-500 flex flex-auto items-center justify-center mx-auto px-3 py-1 rounded text-white"
                         onclick={ctx.link().callback(|_| Msg::AddOne)}
                     >
                         { "Add" }
                     </button>
                     <p>{ self.value }</p>
                 </main>
-                
+
             </div>
         }
     }

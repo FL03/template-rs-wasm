@@ -1,0 +1,30 @@
+{
+  "author": "FL03 <jo3mccain@icloud.com> (https://github.com/FL03)",
+  "bugs": {
+    "url" : "https://github.com/FL03/template-rs-wasm/issues",
+    "email" : "j3mccain@gmail.com"
+  },
+  "categories": [],
+  "description": "template-rs-wasm",
+  "directories": {
+    "path": ""
+  },
+  "keywords": [],
+  "homepage": "https://github.com/FL03/template-rs-wasm/wiki",
+  "license": "Apache-2.0",
+  "name": "@template/template-rs-wasm",
+  "private": true,
+  "scripts": {
+    "build": "trunk build",
+    "dev": "trunk dev",
+    "start": "",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "readme": "https://github.com/FL03/template-rs-wasm/#README",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FL03/template-rs-wasm.git"
+  },
+  "version": "0.1.0",
+  "workspaces": []
+}

@@ -1,7 +1,7 @@
 /*
-    Appellation: curiosity <lib>
+    Appellation: template-rs-wasm <lib>
     Contrib: FL03 <jo3mccain@icloud.com>
-    Description: 
+    Description:
         template-rs-wasm is a complete wasm application template for rust applications
 */
 #[doc(inline)]
@@ -11,6 +11,8 @@ pub(crate) mod actors;
 pub(crate) mod components;
 pub(crate) mod core;
 pub(crate) mod data;
+
+use wasm_bindgen::prelude::*;
 
 #[wasm_bindgen]
 pub fn add_one(data: usize) -> usize {

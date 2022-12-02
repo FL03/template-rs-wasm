@@ -3,7 +3,7 @@ dist = "dist"
 filehash = true
 public_url = "/"
 release = true
-target = "index.html"
+target = "public/index.html"
 
 [watch]
 watch = []

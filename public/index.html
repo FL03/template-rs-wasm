@@ -3,6 +3,7 @@
   <head>
     <!-- <link hrefy="/static/assets/app.css" rel="stylesheet"/> -->
     <base data-trunk-public-url/>
+    <!-- FontAwesome -->
     <link
         crossorigin="anonymous"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css"
@@ -10,14 +11,17 @@
         referrerpolicy="no-referrer"
         rel="stylesheet"
     />
-    <link data-trunk rel="css" href="static/css/app.css"/>
+    <!-- Custom CSS -->
+    <link data-trunk rel="css" href="../static/css/app.css"/>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1" name="viewport">
+    <!-- TailwindCSS Import with forms & typography -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-    <title>Curiosity</title>
+    <!-- Website Title -->
+    <title>Template</title>
   </head>
   <body class="flex flex-col m-0 p-0 z-0 min-h-screen min-w-full max-w-screen">
-    
+    <link data-trunk rel="rust" href="../Cargo.toml" data-wasm-opt="z"/>
     <script 
         crossorigin="anonymous" 
         integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
