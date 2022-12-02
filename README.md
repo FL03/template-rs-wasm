@@ -1,13 +1,13 @@
-# template-workspace
+# template-rs-wasm
 
-A barebones repository template for quickly setting up a proper workspace
+A template for quickly building Rust applications targeting WebAssembley runtimes.
 
 ## Installation
 
 Start by cloning the repository
 
 ```bash
-git clone https://github.com/FL03/template-workspace
+git clone https://github.com/FL03/template-rs-wasm
 
 ```
 
